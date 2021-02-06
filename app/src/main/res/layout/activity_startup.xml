@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ssf"
+    tools:context=".StartupActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="224dp"
+        android:fontFamily="@font/arizonia"
+        android:text="Tic Tac Toe"
+        android:textColor="#FF16CF79"
+        android:textSize="80sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="Tic Tac Toe" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="313dp"
+        android:layout_height="328dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/playbutton"
+            android:layout_width="312dp"
+            android:layout_height="79dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="playwindow"
+            android:text="Single Player"
+            android:textColor="#FFE6FF00"
+            android:textSize="35sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.606"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mpbutton" />
+
+        <Button
+            android:id="@+id/mpbutton"
+            android:layout_width="312dp"
+            android:layout_height="79dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="mpwindow"
+            android:text="Multiplayer"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="311dp"
+            android:layout_height="79dp"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="aboutwindow"
+            android:text="About"
+            android:textColor="#FF19F48E"
+            android:textSize="35sp" />
+
+        <Button
+            android:id="@+id/exitbutton"
+            android:layout_width="311dp"
+            android:layout_height="79dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Exit"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="35sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
